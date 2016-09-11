@@ -31,7 +31,7 @@ describe('JHipster generator Docker', function () {
             assert.file([
                 'Dockerfile'
             ]);
-            assert.fileContent('Dockerfile','FROM java:8');
+            assert.fileContent('Dockerfile','FROM java:openjdk-8-jdk-alpine');
         });
     });
 
