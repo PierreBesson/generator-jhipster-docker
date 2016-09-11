@@ -2,6 +2,8 @@ FROM java:openjdk-8-jdk-alpine
 
 ENV JHIPSTER_SLEEP 0
 
+RUN apk add nodejs=6.2.0-r0 --update
+
 # add source
 ADD . /code/
 # package the application and delete all lib
